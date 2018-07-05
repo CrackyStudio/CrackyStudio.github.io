@@ -1,14 +1,11 @@
-body {
-	margin: 0;
-	padding: 0;
-	width:100vw;
-	height:100vh;
+.column {
+    float: left;
+    margin-left: 12%;
+    margin-bottom: 5.5em;
 }
-  
-img.bg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 100vw;
-	height: 100vh;
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
