@@ -1,7 +1,13 @@
 .column {
     float: left;
-    margin-left: 33px;
-    margin-bottom: 2.5em;
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+
+.row {
+    margin: 50px;
 }
 
 .row::after {
