@@ -1,11 +1,17 @@
 .column {
     float: left;
-    margin-left: 12%;
-    margin-bottom: 5.5em;
+    margin-left: 33px;
+    margin-bottom: 2.5em;
 }
 
 .row::after {
     content: "";
     clear: both;
     display: table;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS", Times, serif;
+    margin-bottom: 1em;
 }
