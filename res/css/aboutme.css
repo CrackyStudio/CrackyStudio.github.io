@@ -119,7 +119,7 @@ div#vitem a.active {
     color: black;
     cursor: default;
 }
-div#musicitems, div#aboutmeitems {
+div#musicitems, div#devitems {
     display:none;
     padding-bottom: 30px;
 }
