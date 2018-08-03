@@ -1,22 +1,22 @@
 <head>
     <title>Cracky Studio</title>
     <link rel="shortcut icon" href="/res/ico/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/res/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/donate.css">
     <script src="/res/js/hide.js"></script>
-</head> 
+</head>  
 <div id="right">
     <div id="hnavbar">
         <marquee id=indev behavior="scroll" scrollamount="5" direction="left">Website is still under development... Stay tuned!</marquee>
     </div>
     <div id=content>
-        <form action="#" id="form" method="post" name="form">
-            <input name="vname" placeholder="Your Name" type="text" value="">
-            <input name="vemail" placeholder="Your Email" type="text" value="">
-            <input name="sub" placeholder="Subject" type="text" value="">
-            <textarea name="msg" placeholder="Type your text here..."></textarea>
-            <input id="send" name="submit" type="submit" value="Send Message">
-        </form>
-        <h3><?php include "/res/php/contact.php"?></h3>
+        <div>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="YV2W8AVCGE68Y">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
     </div>
 </div>
 <div id="logo"></div>  

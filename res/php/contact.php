@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
             $headers .= 'Cc:' . $email2 . "rn";
             $message = wordwrap($message, 70);
             mail("cracky.studio@gmail.com", $subject, $message, $headers);
-            echo "Your mail has been sent successfuly ! Thank you for your message. I'll answer you ASAP";
+            echo "Your mail has been sent successfuly! Thank you for your message. I'll answer you ASAP";
         }
     }
 }
