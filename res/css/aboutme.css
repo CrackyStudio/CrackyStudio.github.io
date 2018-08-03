@@ -119,48 +119,12 @@ div#vitem a.active {
     color: black;
     cursor: default;
 }
-div#devitems, div#aboutmeitems {
+div#musicitems, div#aboutmeitems {
     display:none;
     padding-bottom: 30px;
 }
 p#title {
     cursor: pointer;
-}
-iframe {
-   display: block;
-   margin: 0 auto;
-}
-div#sc1 {
-    padding-top: 5%;
-    padding-left: 15%;
-    margin: 0px;
-    width:30%;
-    height:166px;
-    float:left;
-}
-div#sc2 {
-    padding-top: 5%;
-    padding-right: 15%;
-    margin: 0px;
-    width:30%;
-    height:166px;
-    float:right;
-}
-div#sc3 {
-    padding-top: 5%;
-    padding-left: 15%;
-    margin: 0px;
-    width:30%;
-    height:166px;
-    float:left;
-}
-div#sc4 {
-    padding-top: 5%;
-    padding-right: 15%;
-    margin: 0px;
-    width:30%;
-    height:166px;
-    float:right;
 }
 a {
     text-decoration: none;

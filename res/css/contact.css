@@ -166,3 +166,7 @@ div#content {
     position: absolute;
     top: 0; left: 200px; bottom: 0; right: 0;
 }
+a {
+    text-decoration: none;
+    color:white;
+}
