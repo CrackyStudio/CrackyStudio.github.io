@@ -1,4 +1,4 @@
-function HideDevSection() {
+function Dev() {
     var x = document.getElementById("devitems");
     var x2 = document.getElementById("aboutmeitems");
     var x3 = document.getElementById("musicitems");
@@ -10,7 +10,7 @@ function HideDevSection() {
         x.style.display = "none";
     }
 }
-function HideAboutMeSection() {
+function AboutMe() {
     var x = document.getElementById("aboutmeitems");
     var x2 = document.getElementById("devitems");
     var x3 = document.getElementById("musicitems");
@@ -22,7 +22,7 @@ function HideAboutMeSection() {
         x.style.display = "none";
     }
 }
-function HideMusicSection() {
+function Music() {
     var x = document.getElementById("musicitems");
     var x2 = document.getElementById("aboutmeitems");
     var x3 = document.getElementById("devitems");
@@ -34,7 +34,7 @@ function HideMusicSection() {
         x.style.display = "none";
     }
 }
-function HideAllSection() {
+function NoItem() {
     var x = document.getElementById("musicitems");
     var x2 = document.getElementById("aboutmeitems");
     var x3 = document.getElementById("devitems");

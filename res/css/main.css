@@ -1,132 +1,82 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow:hidden;
 }
-div#logo {
-    margin:0px;
-    width:200px;
-    height:10%;
+nav{
+    margin:0px;    
+    width:15%;
+    height:100%;
     float:left;
+    background-color:black;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+p#navsection{
+    margin:-10px 0px -10px 0px;
+    line-height:2.4;
+}
+p#navsectionitem{
+    text-decoration:none;
+    color:white;
+    font-size:12px;
+    line-height:0.4;
+}
+hr {
+    margin:0 0 10px 0;
+}
+div#nav1{
+    margin:0px;
+    padding:30px 0 0 0;
+    width:100%;
+    height:5%;
     background:url("/res/gif/crackytext.gif") no-repeat center center;
     background-size:cover;
 }
-div#left {
-    margin:0px;
-    width:200px;
-    height: 90%;
-    float:left;
-    background-color:black;
+div#nav2{
     color:white;
-    font-size:10px;
     text-align:center;
+    font-size:10px;
+    line-height:0.4;
 }
-div#right {
-    margin:0px;
-    width:calc(100% - 200px);
-    width: -webkit-calc(100% - 200px);
-    width: -moz-calc(100% - 200px);
-    height:90%;
+div#nav3{
+    padding:50px 20px 0px 20px;
+    font-size:20px;
+}
+div#devitems, div#aboutmeitems, div#musicitems {
+    display:none;
+}
+section#sec1{
     float:right;
-    background-color:white;
-    color: black;
-}
-div#hnavbar {
-    margin:0px;
-    width:100%;
+    margin:0px;    
+    width:85%;
     height:10%;
     background-color:black;
+}
+marquee#indev{
+    font-size:20px;
     color:white;
+    width:30%;
+    height:10%;
+    margin-left:35%;   
+    position:relative;
+    transform:translateY(90%);
 }
-div#vnavbar {
-    padding-top: 50px;
-    padding-left:20px;
-    padding-right:20px;
-    font-size: 20px;
-    text-align: left;
-}
-div#vitem {
-    font-size: 12px;
-}
-p{
-    line-height: 2.4;
-    margin:-10px 0 -10px 0;
-}
-hr {
-    margin:2px 0 10px 0;
-}
-div#hitem {
-    font-size: 20px;
-    color:white;
-    background-color:black;
-    width: 100px;
-    height: 40px;
-    float:right;
-    text-align:center;
-    padding-top:10px;
-}
-div#hitem:hover
-{
-    background-color:#0000ff;
-    color:white;
-}
-div#hitem.active {
+section#sec2{
     background-color:white;
-    color:black;
+    width:100%;
+    height:100%;
 }
-marquee#indev {
-    font-size: 20px;
-    color:white;
-    background-color:black;
-    width: 20%;
-    height: 40px;
-    padding-top:20px;
-    margin-left:40%;    
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-div#hitem a {
-    text-decoration: none;
-    color:white;
-    display: block;
-    height: 100%;
-}
-div#hitem a.active {
-    background-color: #fff;
-    color: black;
-    cursor: default;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    transform: translateY(20%);
-}
-p#info{
-    line-height: 2.4;
-    margin:-10px 0 -10px 0;
-    font-size:10px;
-}
-div#vitem a {
-    text-decoration: none;
-    color:white;
-}
-div#vitem a.active {
-    background-color: #fff;
-    color: black;
-    cursor: default;
-}
-div#musicitems, div#aboutmeitems {
-    display:none;
-    padding-bottom: 30px;
-}
-p#title {
-    cursor: pointer;
-}
-a {
-    text-decoration: none;
-    color:white;
+/* Content config start here */
+h1{ 
+    width:85%;
+    margin-left:15%;
+    height:90%;
+    text-align:center;
+    position:relative;
+    transform:translateY(45%);
+    font-size: 3.5em; 
 }

@@ -1,66 +1,81 @@
-<head>
-    <title>Cracky Studio</title>
-    <link rel="shortcut icon" href="/res/ico/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/res/css/contact.css">
-    <script src="/res/js/hide.js"></script>
-</head> 
-<div id="right">
-    <div id="hnavbar">
-        <marquee id=indev behavior="scroll" scrollamount="5" direction="left">Website is still under development... Stay tuned!</marquee>
-    </div>
-    <div id=content>
-        <form action="#" id="form" method="post" name="form">
-            <input name="vname" placeholder="Your Name" type="text" value="">
-            <input name="vemail" placeholder="Your Email" type="text" value="">
-            <input name="sub" placeholder="Subject" type="text" value="">
-            <textarea name="msg" placeholder="Type your text here..."></textarea>
-            <input id="send" name="submit" type="submit" value="Send Message">
-        </form>
-        <h3><?php include "/res/php/contact.php"?></h3>
-    </div>
-</div>
-<div id="logo"></div>  
-<div id="left">
-    <p id=info>GNU General Public License v3.0</p>
-    <p id=info>Hosted on GitHub</p>
-    <div id="vnavbar">
-        <p><a id=title onclick="HideAboutMeSection()" href="http://www.crackystudio.com/aboutme.html">About Me</a></p>
-        <hr>
-        <div id=vitem>
-            <div id=aboutmeitems>
-                <p><a href="#">Bio</a></p>
-                <p><a href="#">Setup</a></p>
-                <p><a href="#">Profiles</a></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Cracky Studio</title>
+        <link rel="shortcut icon" href="/res/ico/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="/res/css/contact.css"/>
+        <script src="/res/js/navsection.js"></script>
+    </head>
+    <body>       
+        <nav>
+            <div id=nav1>
+                <!-- Website Logo (.GIF) -->
             </div>
-        </div>
-        <p><a id=title onclick="HideDevSection()" href="http://www.crackystudio.com/index.html">Dev</a></p>
-        <hr>
-        <div id=vitem>
-            <div id=devitems>
-                <p><a href="#">ARK Server Organiser</a></p>
-                <p><a href="#">OEM Input</a></p>
-                <p><a href="#">CH2 Bot</a></p>
-                <p><a href="#">CSGO Skins Collector Tool</a></p>
-                <p><a href="#">SteamIDentifier</a></p>
-                <p><a href="#">4G Switcher</a></p>
-                <p><a href="#">Multiplix</a></p>
-                <p><a href="#">BreakPSC</a></p>
-                <p><a href="#">Ghost Admins</a></p>
-                <p><a href="#">Website Visual Editor</a></p>
+            <div id=nav2>
+                <p>GNU General Public License v3.0</p>
+                <p>Hosted on GitHub</p>
             </div>
-        </div>
-        <p><a id=title onclick="HideMusicSection()" href="http://www.crackystudio.com/music.html">Music</a></p>
-        <hr>
-        <div id=vitem>
-            <div id=musicitems>
-                <p><a href="https://soundcloud.com/crackystudio" target="_blank">Soundcloud</a></p>
-                <p><a href="https://www.youtube.com/channel/UCG46IUbf9iAbTsU93JjU_Eg" target="_blank">Youtube</a></p>
-                <p><a href="https://www.instagram.com/cracky91" target="_blank">Instagram (clips)</a></p>
+            <div id=nav3>
+                <div id=aboutme>
+                    <p id=navsection><a href="#" onclick="AboutMe()">About Me</a></p>
+                    <hr>
+                    <div id=aboutmeitems>
+                        <p id=navsectionitem><a href="/res/subpages/html/aboutme/bio.html">Bio</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/aboutme/setup.html">Setup</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/aboutme/profiles.html">Profiles</a></p>
+                    </div>
+                </div>
+                <div id=dev>
+                    <p id=navsection><a href="#" onclick="Dev()">Dev</a></p>
+                    <hr>
+                    <div id=devitems>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/arkso.html">ARK Server Organiser</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/oeminput.html">OEM Input</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/ch2bot.html">CH2 Bot</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/csgosct.html">CSGO Skins Collector Tool</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/steamidentifier.html">SteamIDentifier</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/4gswitcher.html">4G Switcher</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/multiplix.html">Multiplix</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/breakpsc.html">BreakPSC</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/ghostadmins.html">Ghost Admins</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/dev/wve.html">Website Visual Editor</a></p>
+                    </div>
+                </div>
+                <div id=music>
+                    <p id=navsection><a href="#" onclick="Music()">Music</a></p>
+                    <hr>
+                    <div id=musicitems>
+                        <p id=navsectionitem><a href="/res/subpages/html/music/soundcloud.html">Soundcloud</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/music/youtube.html">Youtube</a></p>
+                        <p id=navsectionitem><a href="/res/subpages/html/music/instagram.html">Instagram (clips)</a></p>
+                    </div>
+                </div>
+                <div id=donation>
+                    <p id=navsection><a href="/donation.html" onclick="NoItem()">Donation</a></p>
+                    <hr>
+                </div>
+                <div id=contact>
+                    <p id=navsection><a href="/contact.html" onclick="NoItem()">Contact</a></p>
+                    <hr>
+                </div>
             </div>
-        </div>
-        <p><a id=title onclick="HideAllSection()" href="http://www.crackystudio.com/donate.html">Donation</a></p>
-        <hr>
-        <p><a id=title onclick="HideAllSection()" href="#">Contact</a></p>
-        <hr>
-    </div>
-</div>
+        </nav>        
+        <section id=sec1>
+            <div>
+                <marquee id=indev behavior=scroll scrollamount=5 direction=left>Website is still under development... Stay tuned!</marquee>
+            </div>
+        </section>
+        <section id=sec2>
+            <!-- Page content start here -->
+            <script src="/res/js/index.js"></script>
+            <h1>
+            <span
+                 class="txt-rotate"
+                 data-period="1000"
+                 data-rotate='["Error 404.", "You are not really lost!", "Content in dev.", "Coming soon, stay tuned!"]'></span>
+            </h1>
+            <!-- Page content ends here -->
+        </section>       
+    </body>
+</html>
