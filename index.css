@@ -1,0 +1,196 @@
+body {
+    height:100%; 
+    width:100%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#header {
+    display: flex; 
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    height:100px; 
+    right:0px;
+    overflow:hidden; 
+    background:black;
+}
+
+#content {
+    position:absolute; 
+    top:101px; 
+    bottom:51px; 
+    left:0px; 
+    right:0px; 
+    overflow:auto; 
+    background: black; 
+    color: white; 
+    padding-left: 30%; 
+    padding-right: 30%; 
+    font-size: small
+}
+
+#footer {
+    position:absolute; 
+    bottom:0px; 
+    height:50px; 
+    left:0px;
+    right:0px; 
+    overflow:hidden; 
+    background:black;
+}
+
+#gifCredit {
+    position:relative; 
+    width:33%; 
+    height:100%;
+    padding-left: 1%; 
+    padding-right: 1%;
+}
+
+#gifCreditItem {
+    display: block; 
+    max-width:60%;
+    max-height:60%; 
+    margin: auto; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+}
+
+#justify {
+    text-align: justify;
+}
+
+.anim-text {
+    display: flex; 
+    justify-content: center;
+}
+
+#gplv3 {
+    display: block; 
+    max-width:60%; 
+    max-height:60%; 
+    margin: auto; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+}
+
+#ghosts {
+    float: left; 
+    margin-top: auto; 
+    margin-bottom: auto; 
+    margin-left: 1%; 
+    display: block; 
+    max-width:80%; 
+    max-height:80%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+}
+
+#navLeft {
+    width:33%; 
+    height:100%; 
+    display: flex; 
+    justify-content: center; 
+    float: right; 
+    flex-direction: row; 
+    align-content: flex-end; 
+    align-items: center;
+}
+
+#navRight {
+    width:33%; 
+    height:100%; 
+    display: flex; 
+    justify-content:center; 
+    float: left; 
+    flex-direction:row; 
+    align-content: flex-end; 
+    align-items: center;
+}
+
+#navLeftLink {
+    color: white; 
+    display: block; 
+    padding-right: 3%; 
+    border: 1px solid white; 
+    padding: 2%; 
+    min-width: 20%; 
+    text-align: center; 
+    text-decoration: none; 
+    margin-left: auto; 
+    height: 20%;
+}
+
+#navLeftLink:hover, #navRightLink:hover {
+    background: white;
+    color: black;
+}
+
+#navRightLink {
+    color: white; 
+    display: block; 
+    padding-right: 3%; 
+    border: 1px solid white; 
+    padding: 2%; 
+    min-width: 20%; 
+    height: 20%; 
+    text-align: center; 
+    text-decoration: none; 
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#inDev {
+    margin-right: 1%; 
+    text-align: justify; 
+    float: right; 
+    color: white;
+    -webkit-animation: changeColor 10s; 
+    animation: changeColor 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+#div404 {
+    background: black;
+    overflow: hidden;
+    position:absolute; 
+    top:101px; 
+    bottom:51px; 
+    left:0px; 
+    right:0px; 
+    padding-left: 30%; 
+    padding-right: 30%; 
+}
+
+#gif404 {
+    display: block; 
+    max-width:30%; 
+    max-height:30%; 
+    margin: auto; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+}
+
+@keyframes changeColor {
+    0%  {color: dodgerblue;}
+    33%   {color: white;}
+    66%   {color: red;}
+}

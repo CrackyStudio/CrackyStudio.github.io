@@ -1,81 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cracky Studio</title>
-        <link rel="shortcut icon" href="/res/ico/favicon.ico"/>
-        <link rel="stylesheet" type="text/css" href="/res/css/main.css"/>
-        <script src="/res/js/navsection.js"></script>
+        <link rel="icon" href="./cs.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+        <script src="./anim-text.js"></script>
     </head>
-    <body>    
-        <nav>
-            <div id=nav1>
-                <!-- Website Logo (.GIF) -->
+    <body>
+        <div id="header"> 
+            <div id="navLeft">
+                <a href="/development" id="navLeftLink">Development</a>
+                <a href="/music" id="navLeftLink">Music</a>            
+                <a href="/setup" id="navLeftLink">Setup</a>
             </div>
-            <div id=nav2>
-                <p>GNU General Public License v3.0</p>
-                <p>Hosted on GitHub</p>
+            <div id="gifCredit">
+                <img src="./crackytext.gif" id="gifCreditItem">
             </div>
-            <div id=nav3>
-                <div id=aboutme>
-                    <p id=navsection><a href="#" onclick="AboutMe()">About Me</a></p>
-                    <hr>
-                    <div id=aboutmeitems>
-                        <p id=navsectionitem><a href="/res/subpages/html/aboutme/bio.html">Bio</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/aboutme/setup.html">Setup</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/aboutme/profiles.html">Profiles</a></p>
-                    </div>
-                </div>
-                <div id=dev>
-                    <p id=navsection><a href="#" onclick="Dev()">Dev</a></p>
-                    <hr>
-                    <div id=devitems>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/arkso.html">ARK Server Organiser</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/oeminput.html">OEM Input</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/ch2bot.html">CH2 Bot</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/csgosct.html">CSGO Skins Collector Tool</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/steamidentifier.html">SteamIDentifier</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/4gswitcher.html">4G Switcher</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/multiplix.html">Multiplix</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/breakpsc.html">BreakPSC</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/ghostadmins.html">Ghost Admins</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/dev/wve.html">Website Visual Editor</a></p>
-                    </div>
-                </div>
-                <div id=music>
-                    <p id=navsection><a href="#" onclick="Music()">Music</a></p>
-                    <hr>
-                    <div id=musicitems>
-                        <p id=navsectionitem><a href="/res/subpages/html/music/soundcloud.html">Soundcloud</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/music/youtube.html">Youtube</a></p>
-                        <p id=navsectionitem><a href="/res/subpages/html/music/instagram.html">Instagram (clips)</a></p>
-                    </div>
-                </div>
-                <div id=donation>
-                    <p id=navsection><a href="/donation.html" onclick="NoItem()">Donation</a></p>
-                    <hr>
-                </div>
-                <div id=contact>
-                    <p id=navsection><a href="/contact.html" onclick="NoItem()">Contact</a></p>
-                    <hr>
-                </div>
+            <div id="navRight">
+                <a href="/registered" id="navRightLink">Registered</a>
+                <a href="/donation" id="navRightLink">Donation</a>
+                <a href="/contact" id="navRightLink">Contact</a>
             </div>
-        </nav>        
-        <section id=sec1>
-            <div>
-                <marquee id=indev behavior=scroll scrollamount=5 direction=left>Website is still under development... Stay tuned!</marquee>
-            </div>
-        </section>
-        <section id=sec2>
-            <!-- Page content start here -->
-            <script src="/res/js/index.js"></script>
-            <h1>
-            <span
-                 class="txt-rotate"
-                 data-period="1000"
-                 data-rotate='["Hello!", "I am Cracky.", "Welcome to my website!"]'></span>
-            </h1>
-            <!-- Page content ends here -->
-        </section>       
+        </div> 
+        <div id="content"> 
+            <br><br>
+            <h1>About me</h1>
+            <br>
+            <strong>Who am I?</strong>
+            <p id="justify">
+                I'm born in 1996, the 8th of November next to Paris in France. Digital hobbyist since my 4 years old, I'm passionate about music, 
+                development & video games. I learned everything by myself thanks to internet and nowadays I'm a student at Efreitech school where 
+                I stay 2 days a week until 2020 to improve my web & apps development. I also work as Sitecore Developer at Prévoir 3 days a week.
+            </p>
+            <br>
+            <strong>My hobbies?</strong>
+            <p id="justify">
+                Of course, I've some hobbies:
+                <ul>
+                    <li>Movies & Series</li>
+                    <li>Video Games</li>
+                    <li>Development</li>
+                    <li>Beatmaking/Music Production</li>
+                    <li>Level Designing</li>
+                    <li>Designing/DeviantArt</li>
+                </ul>
+            </p>
+            <br>
+            <strong>And...</strong>
+            <p id="justify">
+                And what? You know me better know, I'll not put all my life on the net.
+            </p>
+            <br>
+            <span class="anim-text" data-period="1000" data-rotate='["Thanks for your visit!", "See you soon :)"]'></span>
+            <br><br><br>
+        </div> 
+        <div id="footer"> 
+            <img src="./gpl-v3.png" id="gplv3">
+            <img src="./ghosts.gif" id="ghosts">
+            <p id="inDev">
+            Website inDev
+            </p>
+        </div>
     </body>
 </html>
