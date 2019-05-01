@@ -1,68 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cracky Studio</title>
-        <link rel="icon" href="./res/images/cs.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="./res/css/index.css" />
-        <script src="./res/js/anim-text.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <title>Cracky Studio</title>
+    <link rel="icon" href="cs.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
     <body>
-        <div id="header"> 
-            <div id="navLeft">
-                <a href="/development.html" id="navLeftLink">Development</a>
-                <a href="/music.html" id="navLeftLink">Music</a>            
-                <a href="/setup.html" id="navLeftLink">Setup</a>
+    <div class="slider-container">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+            <div class="slide slide-0 active">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">CSGO Invy</h2>
+                        <p class="slide__text-desc" style="font-family: 'Open Sans Condensed', sans-serif;">CSGO Invy is a web app which is used to analyze your inventory and to list each skins you don't own. You will be able to see this list classified by weapon and also skins data like pictures and buy links for each skin quality. </p>
+                        <a class="slide__text-link csgoinvy-but" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div id="gifCredit">
-                <a href="index.html"><img src="./res/images/crackytext.gif" id="gifCreditItem"></a>
+            <div class="slide slide-1 ">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">ARK Server Organiser</h2>
+                        <p class="slide__text-desc" style="font-family: 'Open Sans Condensed', sans-serif;">ARKSO is a freeware giving a complete interface for your ARK Dedicated Server. It works only on windows and with SteamCMD.</p>
+                        <a class="slide__text-link arkso-but" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div id="navRight">
-                <a href="/registered.html" id="navRightLink">Registered</a>
-                <a href="/donation.html" id="navRightLink">Donation</a>
-                <a href="/contact.html" id="navRightLink">Contact</a>
+            <div class="slide slide-2">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">Check my projects</h2>
+                        <p class="slide__text-desc" style="font-family: 'Open Sans Condensed', sans-serif;"></p>
+                        <a class="slide__text-link github-but" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+                    </div>
+                </div>
             </div>
-        </div> 
-        <div id="content"> 
-            <br><br>
-            <h1>About me</h1>
-            <br>
-            <strong>Who am I?</strong>
-            <p id="justify">
-                I'm born in 1996, the 8th of November next to Paris in France. Digital hobbyist since my 4 years old, I'm passionate about music, 
-                development & video games. I learned everything by myself thanks to internet and nowadays I'm a student at Efreitech school where 
-                I stay 2 days a week until 2020 to improve my web & apps development. I also work as Sitecore Developer at Prévoir 3 days a week.
-            </p>
-            <br>
-            <strong>My hobbies?</strong>
-            <p id="justify">
-                Of course, I've some hobbies:
-                <ul>
-                    <li>Movies & Series</li>
-                    <li>Video Games</li>
-                    <li>Development</li>
-                    <li>Beatmaking/Music Production</li>
-                    <li>Level Designing</li>
-                    <li>Designing/DeviantArt</li>
-                </ul>
-            </p>
-            <br>
-            <strong>And...</strong>
-            <p id="justify">
-                And what? You know me better know, I'll not put all my life on the net.
-            </p>
-            <br>
-            <span class="anim-text" data-period="1000" data-rotate='["Thanks for your visit!", "See you soon :)"]'></span>
-            <br><br><br>
-        </div> 
-        <div id="footer"> 
-            <img src="./res/images/gpl-v3.png" id="gplv3">
-            <img src="./res/images/ghosts.gif" id="ghosts">
-            <p id="inDev">
-            Website inDev
-            </p>
-        </div>
+        </div>    
     </body>
 </html>
